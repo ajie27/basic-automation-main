@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.10.0 on win32)" generated="20231223 12:43:07.768" rpa="false" schemaversion="4">
+<suite id="s1" name="Test-Suite-1" source="D:\Testing QA\basic-automation-main\project-demo\test-suite-1.robot">
+<test id="s1-t1" name="testcase-1" line="24">
+<kw name="Login Success">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${HOST}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231223 12:43:08.054" level="INFO">Opening browser 'chrome' to base url 'http://localhost/db/'.</msg>
+<status status="PASS" starttime="20231223 12:43:08.054" endtime="20231223 12:43:10.052"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:username</arg>
+<arg>${EMAIL}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231223 12:43:10.052" level="INFO">Typing text 'it' into text field 'name:username'.</msg>
+<status status="PASS" starttime="20231223 12:43:10.052" endtime="20231223 12:43:10.253"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:password</arg>
+<arg>${PASS-1}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231223 12:43:10.261" level="INFO">Typing text 'it' into text field 'name:password'.</msg>
+<status status="PASS" starttime="20231223 12:43:10.253" endtime="20231223 12:43:10.388"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://button[@type='submit']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231223 12:43:10.388" level="INFO">Clicking element 'xpath://button[@type='submit']'.</msg>
+<status status="PASS" starttime="20231223 12:43:10.388" endtime="20231223 12:43:10.909"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>xpath://*[@id='main']</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20231223 12:43:10.936" level="INFO">Current page contains element 'xpath://*[@id='main']'.</msg>
+<status status="PASS" starttime="20231223 12:43:10.909" endtime="20231223 12:43:10.938"/>
+</kw>
+<status status="PASS" starttime="20231223 12:43:08.054" endtime="20231223 12:43:10.938"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20231223 12:43:10.938" endtime="20231223 12:43:13.108"/>
+</kw>
+<status status="PASS" starttime="20231223 12:43:08.054" endtime="20231223 12:43:13.108"/>
+</test>
+<test id="s1-t2" name="testcase-2" line="29">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${HOST}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231223 12:43:13.108" level="INFO">Opening browser 'chrome' to base url 'http://localhost/db/'.</msg>
+<status status="PASS" starttime="20231223 12:43:13.108" endtime="20231223 12:43:15.067"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:username</arg>
+<arg>${EMAIL}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231223 12:43:15.067" level="INFO">Typing text 'it' into text field 'name:username'.</msg>
+<status status="PASS" starttime="20231223 12:43:15.067" endtime="20231223 12:43:15.288"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:password</arg>
+<arg>${PASS-2}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231223 12:43:15.288" level="INFO">Typing text 'zzzzzz' into text field 'name:password'.</msg>
+<status status="PASS" starttime="20231223 12:43:15.288" endtime="20231223 12:43:15.439"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://button[@type='submit']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231223 12:43:15.439" level="INFO">Clicking element 'xpath://button[@type='submit']'.</msg>
+<status status="PASS" starttime="20231223 12:43:15.439" endtime="20231223 12:43:15.865"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>xpath://h4[@class='display-6' and contains(text(), 'Selamat Datang')]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20231223 12:43:15.914" level="INFO">Current page contains element 'xpath://h4[@class='display-6' and contains(text(), 'Selamat Datang')]'.</msg>
+<status status="PASS" starttime="20231223 12:43:15.874" endtime="20231223 12:43:15.914"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20231223 12:43:15.914" endtime="20231223 12:43:18.065"/>
+</kw>
+<status status="PASS" starttime="20231223 12:43:13.108" endtime="20231223 12:43:18.065"/>
+</test>
+<status status="PASS" starttime="20231223 12:43:07.768" endtime="20231223 12:43:18.065"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="Test-Suite-1">Test-Suite-1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
